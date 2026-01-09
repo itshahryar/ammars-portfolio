@@ -3,6 +3,18 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Serene Air brand palette (LightSeaGreen tone) */
+  --serene-50: #e8fafa;
+  --serene-100: #d0f4f4;
+  --serene-200: #a5e9e9;
+  --serene-300: #7bdddd;
+  --serene-400: #51d0d0;
+  --serene-500: #2cbcbc; /* primary brand color */
+  --serene-600: #22a3a3;
+  --serene-700: #1a8383;
+  --serene-800: #135f5f;
+
   --accent-blue: #4A90E2;
   --accent-blue-light: #E8F4FD;
   --accent-orange: #FF8C42;
@@ -80,16 +92,99 @@ body {
 /* Swiper Custom Styles */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #10b981 !important;
+  color: var(--serene-500) !important;
 }
 
 .swiper-pagination-bullet {
-  background: #10b981 !important;
+  background: var(--serene-500) !important;
 }
 
 .swiper-pagination-bullet-active {
-  background: #10b981 !important;
+  background: var(--serene-600) !important;
 }
+
+/* ------------------------------------------------------------------ */
+/* Serene Air accent overrides for Tailwind emerald-based utilities   */
+/* This keeps JSX intact while mapping emerald accents to brand teal. */
+/* ------------------------------------------------------------------ */
+
+/* Backgrounds */
+.bg-emerald-50 { background-color: var(--serene-50) !important; }
+.bg-emerald-100 { background-color: var(--serene-100) !important; }
+.bg-emerald-200 { background-color: var(--serene-200) !important; }
+.bg-emerald-300 { background-color: var(--serene-300) !important; }
+.bg-emerald-400 { background-color: var(--serene-400) !important; }
+.bg-emerald-500 { background-color: var(--serene-500) !important; }
+.bg-emerald-600 { background-color: var(--serene-600) !important; }
+.bg-emerald-700 { background-color: var(--serene-700) !important; }
+.bg-emerald-800 { background-color: var(--serene-800) !important; }
+
+/* Text */
+.text-emerald-50 { color: var(--serene-50) !important; }
+.text-emerald-100 { color: var(--serene-100) !important; }
+.text-emerald-200 { color: var(--serene-200) !important; }
+.text-emerald-300 { color: var(--serene-300) !important; }
+.text-emerald-400 { color: var(--serene-400) !important; }
+.text-emerald-500 { color: var(--serene-500) !important; }
+.text-emerald-600 { color: var(--serene-600) !important; }
+.text-emerald-700 { color: var(--serene-700) !important; }
+.text-emerald-800 { color: var(--serene-800) !important; }
+
+/* Borders & rings */
+.border-emerald-50 { border-color: var(--serene-50) !important; }
+.border-emerald-100 { border-color: var(--serene-100) !important; }
+.border-emerald-200 { border-color: var(--serene-200) !important; }
+.border-emerald-300 { border-color: var(--serene-300) !important; }
+.border-emerald-400 { border-color: var(--serene-400) !important; }
+.border-emerald-500 { border-color: var(--serene-500) !important; }
+.border-emerald-600 { border-color: var(--serene-600) !important; }
+.border-emerald-700 { border-color: var(--serene-700) !important; }
+.border-emerald-800 { border-color: var(--serene-800) !important; }
+
+.ring-emerald-50 { --tw-ring-color: var(--serene-50) !important; }
+.ring-emerald-100 { --tw-ring-color: var(--serene-100) !important; }
+.ring-emerald-200 { --tw-ring-color: var(--serene-200) !important; }
+.ring-emerald-300 { --tw-ring-color: var(--serene-300) !important; }
+.ring-emerald-400 { --tw-ring-color: var(--serene-400) !important; }
+.ring-emerald-500 { --tw-ring-color: var(--serene-500) !important; }
+.ring-emerald-600 { --tw-ring-color: var(--serene-600) !important; }
+.ring-emerald-700 { --tw-ring-color: var(--serene-700) !important; }
+.ring-emerald-800 { --tw-ring-color: var(--serene-800) !important; }
+
+/* Gradients (from / via / to) */
+.from-emerald-50 { --tw-gradient-from: var(--serene-50) !important; }
+.from-emerald-100 { --tw-gradient-from: var(--serene-100) !important; }
+.from-emerald-200 { --tw-gradient-from: var(--serene-200) !important; }
+.from-emerald-300 { --tw-gradient-from: var(--serene-300) !important; }
+.from-emerald-400 { --tw-gradient-from: var(--serene-400) !important; }
+.from-emerald-500 { --tw-gradient-from: var(--serene-500) !important; }
+.from-emerald-600 { --tw-gradient-from: var(--serene-600) !important; }
+.from-emerald-700 { --tw-gradient-from: var(--serene-700) !important; }
+.from-emerald-800 { --tw-gradient-from: var(--serene-800) !important; }
+
+.via-emerald-50 { --tw-gradient-via: var(--serene-50) !important; }
+.via-emerald-100 { --tw-gradient-via: var(--serene-100) !important; }
+.via-emerald-200 { --tw-gradient-via: var(--serene-200) !important; }
+.via-emerald-300 { --tw-gradient-via: var(--serene-300) !important; }
+.via-emerald-400 { --tw-gradient-via: var(--serene-400) !important; }
+.via-emerald-500 { --tw-gradient-via: var(--serene-500) !important; }
+.via-emerald-600 { --tw-gradient-via: var(--serene-600) !important; }
+.via-emerald-700 { --tw-gradient-via: var(--serene-700) !important; }
+.via-emerald-800 { --tw-gradient-via: var(--serene-800) !important; }
+
+.to-emerald-50 { --tw-gradient-to: var(--serene-50) !important; }
+.to-emerald-100 { --tw-gradient-to: var(--serene-100) !important; }
+.to-emerald-200 { --tw-gradient-to: var(--serene-200) !important; }
+.to-emerald-300 { --tw-gradient-to: var(--serene-300) !important; }
+.to-emerald-400 { --tw-gradient-to: var(--serene-400) !important; }
+.to-emerald-500 { --tw-gradient-to: var(--serene-500) !important; }
+.to-emerald-600 { --tw-gradient-to: var(--serene-600) !important; }
+.to-emerald-700 { --tw-gradient-to: var(--serene-700) !important; }
+.to-emerald-800 { --tw-gradient-to: var(--serene-800) !important; }
+
+/* Shadows with emerald tint */
+.shadow-emerald-500\/30 { --tw-shadow-color: color-mix(in srgb, var(--serene-500) 30%, transparent); --tw-shadow: var(--tw-shadow-colored) !important; }
+
 
 .swiper-button-next-custom,
 .swiper-button-prev-custom {
