@@ -24,7 +24,7 @@ export default function Home() {
       <Publications />
       <DigitalMarketing />
       <ExperienceTimeline />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Recommendations />
       <CTA />
       <Footer />
